@@ -5,7 +5,22 @@ app = f.Flask(__name__)
 
 @app.route("/")
 def root_page():
-    return '<a href="/referer">Click on me!</a>'
+    return f.render_template("root.html")
+
+
+@app.route("/link")
+def link_page():
+    return f.render_template("link.html")
+
+
+@app.route("/location/href")
+def location_href_page():
+    return f.render_template("locationhref.html")
+
+
+@app.route("/location/replace")
+def location_replace_page():
+    return f.render_template("locationreplace.html")
 
 
 @app.route('/referer')

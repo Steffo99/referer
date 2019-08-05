@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Referer tests</title>
+</head>
+<body>
+    <h1>
+        Referer tests
+    </h1>
+    <ul>
+        <li><a href="{{ url_for("link_page") }}">Simple link</a></li>
+        <li><a href="{{ url_for("location_href_page") }}">location.href</a></li>
+        <li><a href="{{ url_for("location_replace_page") }}">location.replace()</a></li>
+    </ul>
+</body>
+</html>
