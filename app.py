@@ -23,6 +23,11 @@ def location_replace_page():
     return f.render_template("locationreplace.html")
 
 
+@app.route("/window/open")
+def window_open_page():
+    return f.render_template("windowopen.html")
+
+
 @app.route('/referer')
 def referer_page():
     referer = f.request.headers.get("Referer")
